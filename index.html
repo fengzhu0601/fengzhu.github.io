@@ -322,97 +322,21 @@
       
         
           
-            <h1 id="MarkDown简单示例"><a href="#MarkDown简单示例" class="headerlink" title="MarkDown简单示例"></a>MarkDown简单示例</h1><p>#请对比查看源文件与显示效果</p>
-<h2 id="1-标题-井号"><a href="#1-标题-井号" class="headerlink" title="1. 标题,井号(#)"></a>1. 标题,井号(#)</h2><h1 id="1个-号就类似于-h1-即标题1"><a href="#1个-号就类似于-h1-即标题1" class="headerlink" title="1个#号就类似于 h1,即标题1"></a>1个#号就类似于 h1,即标题1</h1><h2 id="2个-号就类似于-h2-即标题2"><a href="#2个-号就类似于-h2-即标题2" class="headerlink" title="2个#号就类似于 h2,即标题2"></a>2个#号就类似于 h2,即标题2</h2><p>…</p>
-<p>#########以此类推,直到 h9</p>
-<pre><code>#  1个#号就类似于 h1,即标题1
+          MarkDown简单示例#请对比查看源文件与显示效果
+1. 标题,井号(#)1个#号就类似于 h1,即标题12个#号就类似于 h2,即标题2…
+#########以此类推,直到 h9
+#  1个#号就类似于 h1,即标题1
 ## 2个#号就类似于 h2,即标题2
 ...
-#########以此类推,直到 h9
-</code></pre><h2 id="2-超链接"><a href="#2-超链接" class="headerlink" title="2.超链接"></a>2.超链接</h2><p>使用方括号,小括号的方式: <a href="http://www.baidu.com" target="_blank" rel="external">CNCounter</a></p>
-<pre><code>[CNCounter](http://www.baidu.com)
-</code></pre><p>还可以采用嵌入html:</p>
-<p><a name="#relative_post">点击跳到嵌入的HTML锚点</a></p>
-<p><a href="http://blog.csdn.net/renfufei" target="_blank" rel="external">铁锚博客</a></p>
-<pre><code>&lt;a name=&quot;#relative_post&quot;&gt;点击跳到嵌入的HTML锚点&lt;/a&gt;
-
-&lt;a href=&quot;http://blog.csdn.net/renfufei&quot;&gt;铁锚博客&lt;/a&gt;
-
-##&lt;a name=&quot;relative_post&quot;&gt;相关文章&lt;/a&gt;
-</code></pre><h2 id="3-图片"><a href="#3-图片" class="headerlink" title="3. 图片"></a>3. 图片</h2><p>类似于在超链接前面加上一个英文的感叹号:</p>
-<p><img src="http://avatar.csdn.net/4/9/C/1_renfufei.jpg" alt="图片描述,可以为空,类似于 alt"></p>
-<pre><code>![图片描述,可以为空,类似于 alt](http://avatar.csdn.net/4/9/C/1_renfufei.jpg)
-</code></pre><p>当然,图片也可以是相对路径啦, <code>./</code>, <code>../</code> 之类的都允许,和 html的相对路径引用是一样的:</p>
-<p><img src="11_Git_CMD.png" alt=""></p>
-<pre><code>![](11_Git_CMD.png)
-![](./11_Git_CMD.png)
-</code></pre><h2 id="4-字体格式"><a href="#4-字体格式" class="headerlink" title="4. 字体格式"></a>4. 字体格式</h2><p><strong>黑体</strong><br><em>斜体</em><br><strong><em>黑体斜体</em></strong></p>
-<pre><code>**黑体**
-*斜体*
-***黑体斜体***
-</code></pre><h2 id="5-源代码引用"><a href="#5-源代码引用" class="headerlink" title="5. 源代码引用"></a>5. 源代码引用</h2><p>源代码引用,只需要段前和段后有空行,并且源码的每一行前面都有制表符(\t),或者4个空格的缩进就会被解析为源码原样引用显示. 类似于  html 的 <code>code</code>, <code>pre</code> 标签.</p>
-<p>另一种行内源码的表示方式是使用键盘上方数字键那一行最左边,数字1左边的 ` 符号括起来即可,注意不是单引号.</p>
-<pre><code>多行级别的源代码
-多行级别的源代码
-多行级别的源代码
-多行级别的源代码
-多行级别的源代码
-</code></pre><p>还可以是 <code>行内级别的源码</code>.</p>
-<h2 id="6-数字列表"><a href="#6-数字列表" class="headerlink" title="6. 数字列表"></a>6. 数字列表</h2><ol>
-<li>数字列表</li>
-<li>数字列表</li>
-<li>数字列表</li>
-<li>数字列表</li>
-<li>数字列表</li>
-</ol>
-<p>####</p>
-<pre><code>数字. 文字
-数字.(空格)文字
-</code></pre><h2 id="7-无序列表"><a href="#7-无序列表" class="headerlink" title="7. 无序列表"></a>7. 无序列表</h2><ul>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-</ul>
-<p>可以是减号</p>
-<pre><code>- 无序列表
-- 无序列表
-- 无序列表
-- 无序列表
-- 无序列表
-- 无序列表
-</code></pre><p>也可以是 * 号</p>
-<ul>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-<li>无序列表</li>
-</ul>
-<p>###</p>
-<pre><code>* 无序列表
-* 无序列表
-* 无序列表
-* 无序列表
-* 无序列表
-* 无序列表
-</code></pre><p>##<a name="relative_post">相关文章</a></p>
-<ol>
-<li><a href="GitHelp.md">目录</a></li>
-<li><a href="01_GitInstall.md">安装及配置Git</a></li>
-<li><a href="02_TortoiseGit.md">安装及配置TortoiseGit</a></li>
-<li><a href="03_Usage.md">基本使用方法</a></li>
-<li><a href="04_MarkDownDemo.md">MarkDown示例</a></li>
-<li><a href="05_BadFileNumber.md">解决 TortoiseGit 诡异的 Bad file number 问题</a></li>
-<li><a href="http://jq.qq.com/?_wv=1027&amp;k=WHbwkD" target="_blank" rel="external">加入QQ群GitHub家园: 225932282</a></li>
-</ol>
-<p>日期: 2014-11-27</p>
-<p>作者: <a href="http://blog.csdn.net/renfufei" target="_blank" rel="external">铁锚: http://blog.csdn.net/renfufei</a></p>
-
-          
+#########以此类推,
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/17/我的博客/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -522,8 +446,15 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/17/test-my-site/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -633,17 +564,15 @@
       
         
           
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
+          Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/05/17/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
